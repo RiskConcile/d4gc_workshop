@@ -1,13 +1,18 @@
 {
-  "name": "Invoice Workshop",
+  "name": "D4GC Workshop",
   "image": "mcr.microsoft.com/devcontainers/python:3.11",
   "postCreateCommand": "pip install -r requirements.txt",
   "customizations": {
     "vscode": {
+      "extensions": [
+        "GrapeCity.gc-excelviewer",     // Excel Viewer
+        "ms-python.python",             // Python
+        "ms-python.vscode-pylance"      // IntelliSense
+      ],
       "settings": {
-        "terminal.integrated.defaultProfile.linux": "bash"
+        "files.autoSave": "onFocusChange",
+        "python.analysis.typeCheckingMode": "basic"
       }
     }
-  },
-  "features": { "ghcr.io/devcontainers/features/common-utils:2": {} }
+  }
 }
