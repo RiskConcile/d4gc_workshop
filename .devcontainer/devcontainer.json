@@ -1,0 +1,7 @@
+{
+  "name": "Invoice Workshop",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11",
+  "postCreateCommand": "pip install -r requirements.txt",
+  "settings": { "terminal.integrated.defaultProfile.linux": "bash" },
+  "features": { "ghcr.io/devcontainers/features/common-utils:2": {} }
+}
