@@ -18,6 +18,8 @@
         "jupyter.askForKernelRestart": false,
         "jupyter.askForKernelInstallation": false
       }
-    }
+    },
+  "updateContentCommand": "sudo apt-get update && sudo apt-get install -y chromium-browser"
   }
 }
+
