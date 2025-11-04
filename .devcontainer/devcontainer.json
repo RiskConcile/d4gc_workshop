@@ -18,8 +18,7 @@
         "jupyter.askForKernelRestart": false,
         "jupyter.askForKernelInstallation": false
       }
-    },
-  "updateContentCommand": "sudo apt-get update && sudo apt-get install -y chromium"
-  }
+    }
+  },
+  "updateContentCommand": "sudo apt-get update && sudo apt-get install -y chromium-browser chromium-chromedriver && sudo ln -sf /usr/bin/chromium-browser /usr/bin/chromium && sudo ln -sf /usr/lib/chromium-browser/chromedriver /usr/bin/chromedriver"
 }
-
