@@ -1,17 +1,22 @@
 {
-  "name": "D4GC Workshop",
+  "name": "Invoice Workshop",
   "image": "mcr.microsoft.com/devcontainers/python:3.11",
-  "postCreateCommand": "pip install -r requirements.txt",
+  "postCreateCommand": "pip install -r requirements.txt && python -m ipykernel install --user --name workshop --display-name 'Python (workshop)'",
   "customizations": {
     "vscode": {
       "extensions": [
-        "GrapeCity.gc-excelviewer",     // Excel Viewer
-        "ms-python.python",             // Python
-        "ms-python.vscode-pylance"      // IntelliSense
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-toolsai.jupyter",
+        "ms-toolsai.jupyter-keymap",
+        "ms-toolsai.jupyter-renderers",
+        "GrapeCity.gc-excelviewer"
       ],
       "settings": {
-        "files.autoSave": "onFocusChange",
-        "python.analysis.typeCheckingMode": "basic"
+        "python.defaultInterpreterPath": "/usr/local/bin/python",
+        "jupyter.jupyterServerType": "local",
+        "jupyter.askForKernelRestart": false,
+        "jupyter.askForKernelInstallation": false
       }
     }
   }
